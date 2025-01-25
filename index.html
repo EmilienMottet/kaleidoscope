@@ -1,40 +1,206 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
 
-		<title>reveal.js</title>
+    <title>Kaléidoscope</title>
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/michelin-designsystem.css" />
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <!-- Slide 1: Titre de la présentation -->
+        <section>
+          <h1>Mobilités douces</h1>
+        </section>
+        <section>
+          <p>
+            Un projet pour réinventer l’expérience vélo connecté grâce à la
+            data.
+          </p>
+        </section>
+        <section>
+          <p>
+            <strong>Objectif de la journée :</strong> Explorer les données des
+            vélos connectés, innover dans leur utilisation et ouvrir la voie à
+            de nouvelles applications.
+          </p>
+        </section>
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+        <!-- Slide 2: Matériel à disposition -->
+        <section>
+          <section>
+            <h2>Matériel à disposition</h2>
+          </section>
+          <section>
+            <ul>
+              <li>
+                <strong>Home Trainer</strong>: Un simulateur de cyclisme indoor
+                avec des capteurs intégrés pour mesurer la puissance, la
+                cadence, la vitesse.
+              </li>
+              <li>
+                <strong>Capteur de puissance</strong>: Mesure la puissance
+                générée en watts pendant l'effort.
+              </li>
+              <li>
+                <strong>Clé Bluetooth</strong>: Permet de connecter des capteurs
+                BLE aux dispositifs comme un Raspberry Pi.
+              </li>
+              <li>
+                <strong>Clé ANT+</strong>: Protocole de communication standard
+                pour les capteurs de vélo (cadence, fréquence cardiaque,
+                puissance…).
+              </li>
+              <li>
+                <strong>Raspberry Pi</strong>: Un mini-ordinateur pour
+                récupérer, traiter et envoyer les données vers une plateforme.
+              </li>
+            </ul>
+          </section>
+        </section>
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+        <!-- Slide 3: Objectif du projet -->
+        <section>
+          <section>
+            <h2>Le But de cette Journée</h2>
+          </section>
+          <section>
+            <p>
+              <strong>Disruption des vélos connectés :</strong> Utiliser les
+              technologies existantes (Bluetooth, ANT+, capteurs) pour aller
+              au-delà des simples mesures de performance.
+            </p>
+            <p>
+              <strong>Innovation :</strong> Penser différemment l’utilisation
+              des données pour enrichir l'expérience utilisateur et apporter une
+              réelle valeur ajoutée.
+            </p>
+          </section>
+        </section>
+
+        <!-- Slide 4: Répartition des équipes -->
+        <section>
+          <section>
+            <h2>Répartition des Équipes</h2>
+          </section>
+          <section>
+            <ul>
+              <li>
+                <strong>Équipe 1 - Récupération des données</strong>: Utiliser
+                Python et des bibliothèques comme PyCycling, Bleak, pyANT,
+                bluepy pour récupérer les données des capteurs.
+              </li>
+              <li>
+                <strong
+                  >Équipe 2 - Visualisation et exploitation des données</strong
+                >: Analyser les données pour en extraire des insights
+                intéressants : puissance moyenne, analyse de la performance,
+                consommation énergétique…
+              </li>
+              <li>
+                <strong
+                  >Équipe 3 - Création d'une interface utilisateur ou
+                  application</strong
+                >: Développer un front-end pour visualiser les données en temps
+                réel ou après l'effort.
+              </li>
+            </ul>
+          </section>
+        </section>
+
+        <!-- Slide 5: Idées d'exploitation des données -->
+        <section>
+          <section>
+            <h2>Idées d'Exploitation</h2>
+          </section>
+          <section>
+            <ul>
+              <li>
+                <strong>Simulation de la consommation d'énergie :</strong>
+                Calculer l’énergie dépensée par le corps et le modéliser comme
+                un chauffage humain.
+              </li>
+              <li>
+                <strong>Simuler un parcours :</strong> Utiliser les données GPS
+                pour simuler un parcours sur une carte, avec l'estimation des
+                calories brûlées.
+              </li>
+              <li>
+                <strong>Création d'un compteur de vélo connecté :</strong>
+                Utiliser les données du capteur pour créer un compteur de vélo
+                personnalisable avec la cadence, la vitesse, la puissance et la
+                distance en temps réel.
+              </li>
+            </ul>
+          </section>
+          <section>
+            <p><strong>Idées supplémentaires :</strong></p>
+            <ul>
+              <li>
+                <strong>Calcul de la vélocité cardiaque :</strong> Analyser la
+                courbe de fréquence cardiaque et de puissance pendant un effort.
+              </li>
+              <li>
+                <strong>Score de performance personnalisé :</strong> Créer un
+                score de performance en fonction des données (ex : watts par kg
+                de poids corporel).
+              </li>
+            </ul>
+          </section>
+        </section>
+
+        <!-- Slide 6: Libs Python pour récupérer les données -->
+        <section>
+          <h2>Pistes de Bootstrap et Libs Python</h2>
+          <ul>
+            <li>
+              <strong>PyCycling</strong>: Librairie pour récupérer des données
+              de capteurs ANT+ et BLE.
+            </li>
+            <li>
+              <strong>Bleak</strong>: Pour la communication Bluetooth (BLE) en
+              Python.
+            </li>
+            <li>
+              <strong>openant</strong>: Pour la communication avec les capteurs
+              ANT+.
+            </li>
+            <li>
+              <strong>bluepy</strong>: Autre bibliothèque Python pour interagir
+              avec des périphériques Bluetooth Low Energy.
+            </li>
+          </ul>
+        </section>
+
+				<!-- Slide Q&A -->
+				<section class="qa-slide" style="position: relative; text-align: center">
+					<img class="qa-image" src="./img/eb002314.jpg" alt="Michelin Man" />
+					<p class="qa-content">🚀blogit.michelin.io🚀</p>
+				</section>
+      </div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+      // Initialisation Reveal.js
+      Reveal.initialize({
+        hash: true,
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      });
+    </script>
+  </body>
 </html>
